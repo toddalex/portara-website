@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start",
+    "start": "ts-node src/index.ts",
     "type-check": "tsc"
   },
   "dependencies": {
@@ -15,16 +15,20 @@
     "graphql": "^15.0.0",
     "isomorphic-unfetch": "3.0.0",
     "next": "latest",
+    "pg": "^8.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.0",
     "redux": "^4.0.5",
-    "redux-devtools-extension": "^2.13.8"
+    "redux-devtools-extension": "^2.13.8",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.24"
   },
   "devDependencies": {
     "@types/node": "^14.0.1",
     "@types/react": "^16.9.35",
     "@types/react-dom": "^16.9.8",
+    "ts-node": "^8.10.1",
     "typescript": "3.9.2"
   },
   "license": "ISC"

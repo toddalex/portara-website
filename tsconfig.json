@@ -7,7 +7,7 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "lib": ["dom", "es2017"],
-    "module": "esnext",
+    "module": "commonjs", // <--- changed from 'esnext' to fix 'cannot use import statement outside a module' error
     "moduleResolution": "node",
     "noEmit": true,
     "noFallthroughCasesInSwitch": true,
@@ -16,6 +16,8 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
+    "emitDecoratorMetadata": true, // <--- added for typeORM
+    "experimentalDecorators": true, // <--- added for typeORM
     "target": "esnext"
   },
   "exclude": ["node_modules"],
